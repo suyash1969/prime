@@ -1,0 +1,30 @@
+class prime
+{
+	public static void main(String args[])
+	{
+		int count=0;
+		int primenumber=0;
+		int notprimenumber=0;
+		int array[]={3,7,12,9,10};
+		for (int i=0;i<array.length;i++)
+		{
+			for(int j=2;j<array[i]/2;j++)
+			if (array[i]%j==0)
+			{
+				count++;
+			}
+			if(count==0)
+			{
+				primenumber++;
+			}
+			else
+			{
+				notprimenumber++;
+			}
+			
+		}
+		System.out.println(primenumber);
+		System.out.println(notprimenumber);
+		
+	}
+}
